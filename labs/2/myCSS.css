@@ -1,0 +1,128 @@
+/* To have the same font as per the pdf: */
+@font-face {
+    font-family: 'Blackadder ITC';
+    /* source: https://github.com/xiayukun/font/blob/master/ITCBLKAD.TTF */
+    src: url('ITCBLKAD.TTF') format('truetype');
+}
+
+/* css for all pages: */
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.picture {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    /* remove all the border around the picture as per the pdf: */
+    border: 0;
+}
+
+.picture img {
+    width: 100%;
+}
+
+div,
+footer {
+    padding-left: 12pt;
+    /* trying to do the same as the pdf: */
+    padding-right: 36pt;
+    border: 2px solid #4C7098;
+    /* to not have double bottom border: */
+    border-bottom: 0px;
+    background-color: #404040;
+    font-size: 14pt;
+}
+
+footer {
+    /* add missing border to footer only: */
+    border-bottom: 2px solid #4C7098;
+}
+
+/* specific #home css: */
+#home .title {
+    background-color: #6A99D0;
+    /* without it the div would be triple the size: */
+    line-height: 0;
+    border-bottom: 2px solid #4C7098;
+}
+
+#home .title h1 {
+    display: inline-block;
+    color: white;
+}
+
+#home .about {
+    color: #B8912F;
+    display: inline-block
+}
+
+#home .options dl {
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+#home footer {
+    color: #4EADEA;
+    background-color: #404040;
+}
+
+/* specific #trails css: */
+#trails .header {
+    background-color: #4D89CD;
+    /* without it the div would be triple the size: */
+    line-height: 0;
+}
+
+#trails .header h1 {
+    color: black;
+}
+
+#trails h2 {
+    /* should use the font in the root directory as per the @font-face on top: */
+    font-family: 'Blackadder ITC', sans-serif;
+    color: #2760A8;
+    background-color: #C9C9C9;
+    margin: 1px 0 8px 0;
+    /* to be the same as the pdf */
+    display: inline-block;
+    font-size: 22pt;
+}
+
+#trails div,
+#trails footer {
+    background-color: #2A2F38;
+    border-bottom: 2px solid #4C7098;
+    font-size: 12pt;
+}
+
+#trails .about {
+    background-color: #3D3225;
+    color: #FFFFFF;
+}
+
+#trails .about dt,
+#trails .bring dt {
+    line-height: 0;
+    font-family: sans-serif;
+}
+
+#trails .picture {
+    /* looks the same as the pdf: */
+    margin: 1px 1px 1px 1px;
+}
+
+#trails .bring dl {
+    color: #ED9F6E;
+    display: inline-block;
+}
+
+#trails footer {
+    color: #FFFFFF;
+    /* looks the same as the pdf: */
+    margin-top: 1px;
+    font-family: sans-serif;
+}
