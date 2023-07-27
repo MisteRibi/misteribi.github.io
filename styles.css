@@ -26,7 +26,7 @@ body {
 
 header, nav {
 	text-align: center;
-	max-width: 500px;
+	/* max-width: 600px; */
     min-width: 360px;
 	margin: auto;
 	margin-bottom: var(--mySpace);
@@ -141,6 +141,13 @@ div:nth-child(odd) > img {
 	display: block;
 	float: none;
 	max-width: 99%;
+}
+
+.half {
+	display: inline-block;
+	float: none;
+	max-width: 48.74%;
+	margin: 0 5px;
 }
 
 .round {
