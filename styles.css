@@ -161,6 +161,7 @@ div:nth-child(odd) > img {
 
 #intro {
 	font-weight: bolder;
+	margin-top: 15px;
 }
 
 #colors-schemes span {
