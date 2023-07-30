@@ -134,6 +134,29 @@ div:nth-child(odd) > a > picture:not(.full) {
 	}
 }
 
+a > picture > img {
+	transition: .2s;
+}
+
+a > picture > img:hover {
+	transform: scale(1.04);
+}
+.area {
+	background: #FFFFFF;
+	display: block;
+	position: absolute;
+	opacity: 0;
+	height: 56.3%;
+	width: 490px;
+	margin: 5px;
+} 
+
+#area2 {
+	left: 500px;
+}
+#area1:hover, #area2:hover {
+	opacity: 0.4;
+}
 
 .full {
 	display: block;
