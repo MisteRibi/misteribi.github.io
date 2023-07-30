@@ -176,9 +176,11 @@ footer {
 	position: sticky;
   	top: 100vh;
 	padding: 1rem;
-	color: var(--myGrayBlue);
+	color: var(--myBlue);
 	background-color: #FFFFFF;
 	text-align: center;
+	font-weight: 600;
+	text-shadow: 5px 5px var(--mySpace) var(--myGrayBlue);
 	border-radius: var(--mySpace);
 	margin-top: calc(var(--mySpace));
 }
