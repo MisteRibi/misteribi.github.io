@@ -93,6 +93,7 @@ div {
 #passions div {
 	background-color: #FFE6C1DF;
 }
+
 h3 {
 	margin-bottom: 0;
 }
@@ -105,13 +106,17 @@ h5 {
 	margin: 0;
 }
 
-img {
-	border-radius: calc(var(--mySpace)/2);
-	margin: calc(var(--mySpace)/2);
-	max-width: 250px;
+li {
+	margin-right: var(--mySpace);
 }
 
-div:nth-child(even) > img:not(.full),
+picture > img {
+	border-radius: calc(var(--mySpace)/2);
+	margin: calc(var(--mySpace)/2);
+	max-width: 280px;
+}
+
+div:nth-child(even) > picture:not(.full),
 div:nth-child(even) > a > picture:not(.full) {
 	float: left;
 	&:not(:first-child) {
@@ -120,7 +125,7 @@ div:nth-child(even) > a > picture:not(.full) {
 	}
 }
 
-div:nth-child(odd) > img:not(.full),
+div:nth-child(odd) > picture:not(.full), 
 div:nth-child(odd) > a > picture:not(.full) {
 	float: right;
 	&:not(:first-child) {
@@ -129,36 +134,11 @@ div:nth-child(odd) > a > picture:not(.full) {
 	}
 }
 
-div:nth-child(even) > h2,
-div:nth-child(even) > h3,
-div:nth-child(even) > p,
-div:nth-child(even) > img {
-	margin-right: var(--mySpace);
-}
-
-div:nth-child(odd) > h2,
-div:nth-child(odd) > h3,
-div:nth-child(odd) > h4,
-div:nth-child(odd) > p,
-div:nth-child(odd) > img {
-	margin-left: var(--mySpace);
-}
-
-.mobile, .mobile.full {
-	display: none;
-}
 
 .full {
 	display: block;
 	float: none;
 	max-width: 99%;
-}
-
-.half {
-	display: inline-block;
-	float: none;
-	max-width: 48.74%;
-	margin: 0 5px;
 }
 
 .round {
@@ -231,51 +211,33 @@ footer {
 		min-width: 200px;
 	}
 	
-	img.normal, img.normal.full {
-		display: none;
-	}
-
-	img.mobile {
+	picture > img {
 		display: block;
 		float: none;
 		clear: both;
 		margin: var(--mySpace);
-		max-width: 500px;
+		max-width: 200px;
 	}
 
-	img.mobile.full {
+	picture > img.full {
 		display: block;
 		float: none;
-		max-width: 97%;
+		max-width: 96.5%;
 		margin-left: var(--mySpace);
 		margin-right: var(--mySpace);
 	}
 }
 
 @media (max-width: 480px) {
-	div:nth-child(odd) > img.mobile {
-		display: block;
-		float: none;
-		margin: var(--mySpace) var(--mySpace) var(--mySpace) auto;
-	}
-	div:nth-child(even) > img.mobile {
-		display: block;
-		float: none;
-		margin: var(--mySpace) auto var(--mySpace) var(--mySpace);
+	picture {
+		width: 100%;
 	}
 
-	img.mobile.full {
+	picture > img.full {
 		display: block;
 		float: none;
 		max-width: 93%;
 		margin-left: var(--mySpace);
 		margin-right: var(--mySpace);
-	}
-	img.full {
-		display: block;
-		float: none;
-		max-width: 96.5%;
-		/* margin-left: var(--mySpace);
-		margin-right: var(--mySpace); */
 	}
 }

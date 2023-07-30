@@ -31,8 +31,12 @@
 			</p>
 		</div>
 		<div>
-			<img class="round normal" src="img/me.200px.png" alt="A photo of me" title="Me">
-			<img class="round mobile" src="img/me.200px.gif" alt="A photo of me" title="Me">
+			<picture>
+				<source media="(max-width: 480px)" srcset="img/me.200px.gif">
+				<img class="round" src="img/me.200px.png" alt="A photo of me">
+			</picture>
+			<!-- <img class="round normal" src="img/me.200px.png" alt="A photo of me" title="Me">
+			<img class="round mobile" src="img/me.200px.gif" alt="A photo of me" title="Me"> -->
 			<p>
 				I’m Jérémy Libion, born in France and came in Canada when I was younger with my parents and siblings.
 				<br><br>I started working at sixteen years old at a groceries store.

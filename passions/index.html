@@ -33,8 +33,12 @@
 		</div>
 		<section id="hiking">
 			<div>
-				<img class="normal" src="img/mehiking.200px.png" alt="A photo of me hiking" tilte="Hiking">
-				<img class="mobile" src="img/mehiking.200px.gif" alt="A photo of me hiking" tilte="Hiking">
+				<picture>
+					<source media="(max-width: 480px)" srcset="img/mehiking.200px.gif">
+					<img src="img/mehiking.200px.png" alt="A photo of me hiking">
+				</picture>
+				<!-- <img class="normal" src="img/mehiking.200px.png" alt="A photo of me hiking" tilte="Hiking">
+				<img class="mobile" src="img/mehiking.200px.gif" alt="A photo of me hiking" tilte="Hiking"> -->
 				<h3>Hiking</h3>
 				<p>
 					As one of my favorite activities, there's hiking, which my girlfriend also love. 
@@ -68,8 +72,13 @@
 				startpoint.
 				<br><br>You can see a screenshot of the two circuit I did:
 			</p>
-			<a href="https://www.google.com/maps/d/edit?mid=1itrlv-BZjyg90lNX6le1USHKInTLGN0&usp=sharing" target="_blank"><img class="normal full" src="img/BikingRoad.1000px.gif" alt="My biking road" title="My biking road"></a>
-			<a href="https://www.google.com/maps/d/edit?mid=1itrlv-BZjyg90lNX6le1USHKInTLGN0&usp=sharing" target="_blank"><img class="mobile full" src="img/BikingRoad.1000px.gif" alt="My biking road" title="My biking road"></a>
+			<a href="https://www.google.com/maps/d/edit?mid=1itrlv-BZjyg90lNX6le1USHKInTLGN0&usp=sharing" target="_blank" rel="noopener noreferrer"><picture>
+				<source media="(max-width: 480px)" srcset="img/BikingRoad.500px.gif">
+				<source media="(max-width: 960px)" srcset="img/BikingRoad.1000px.gif">
+				<img class="full" src="img/BikingRoad.1000px.png" alt="Ausable Chasm mobile website">
+			</picture></a>
+			<!-- <a href="https://www.google.com/maps/d/edit?mid=1itrlv-BZjyg90lNX6le1USHKInTLGN0&usp=sharing" target="_blank"><img class="normal full" src="img/BikingRoad.1000px.gif" alt="My biking road" title="My biking road"></a>
+			<a href="https://www.google.com/maps/d/edit?mid=1itrlv-BZjyg90lNX6le1USHKInTLGN0&usp=sharing" target="_blank"><img class="mobile full" src="img/BikingRoad.1000px.gif" alt="My biking road" title="My biking road"></a> -->
 			<p>
 				<strong>Fun fact: </strong> I learned how to bike without the littles wheels through the help of my younger sister.
 				Since that day, I love to bike.
