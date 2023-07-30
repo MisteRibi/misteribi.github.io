@@ -183,7 +183,7 @@ footer {
 	margin-top: calc(var(--mySpace));
 }
 
-@media (max-width: 3840px) and (min-width: 1920px) {
+@media (max-width: 3840px) and (min-width: 961px) {
 	#passions {
 		background: url("passions/img/bg/left.gif"), url("passions/img/bg/right.gif");
 		background-repeat: no-repeat;
