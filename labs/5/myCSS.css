@@ -120,33 +120,6 @@ nav a {
     padding-left: 0.25rem;
 }
 
-@media screen and (max-width: 480px) {
-    #home header,
-    #home .about,
-    #home .content {
-        flex-direction: column;
-    }
-
-    #home header h1 {
-        
-    }
-
-    #home header img,
-    #home .about video {
-        border: unset;
-        width: auto;
-    }
-    #home header img {
-        margin-left: -4px;
-    }
-
-    #home nav {
-        flex-direction: row;
-        width: auto;
-    }
-}
-
-
 footer span {
     background-color: rgb(236, 225, 223);
     display: flex;
@@ -156,57 +129,58 @@ footer span {
 
 #trails {
     display: grid;
-    grid-template-columns: 150px auto 100px;
+    grid-template-columns: 150px auto auto;
     grid-template-rows: auto;
-    /* grid-template-areas: 
-    "header header header"
-    "nav list list"
-    "audio list list"
-    ". list img"
-    ". table table"
-    "footer footer footer"; */
 }
+
 #trails > header {
-    /* grid-area: header; */
-    background-color: rgb(250, 237, 202);
     grid-column: 1 / 4;
     grid-row: 1 / 2;
+    color: white;
+    padding-left: 10px;
 }
+#trails > picture.header-img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    z-index: -1;
+}
+#trails > picture.header-img > img {
+    height: 128px;
+    width: 100%;
+}
+
 #trails > nav {
-    /* grid-area: nav; */
-    /* width: 50px; */
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    width: 100%;
 }
 #trails > nav > a {
     display: flex;
     flex-direction: column;
 }
+
 #trails > audio {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     width: 100%;
 }
+
 #trails > .list {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
 }
-/* #trails > .list > p {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-}
-#trails > .list > ul {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-} */
+
 #trails > .more {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     width: 100%;
     outline: 3px solid #000;
-    /* grid-area: list; */
     
 }
+#trails > .more > ul {
+    margin: 0;
+}
+
 #trails > .pic {
     grid-column: 3 / 4;
     grid-row: 4 / 5;
@@ -214,21 +188,17 @@ footer span {
     
 }
 #trails > .pic > img {
-    /* display: grid;
-    grid-column: 1 / 3;
-    grid-row: 4 / 5; */
-    height: 50px;
-    outline: 3px solid blue;
+    width: 100%;
 }
+
 #trails > table {
     grid-column: 2 / 4;
     grid-row: 5 / 6;
-    /* grid-area: table; */
 }
+
 #trails > footer {
     grid-column: 1 / 4;
     grid-row: 6 / 7;
-    /* grid-area: footer; */
 }
 
 /* specific #trails css: */
@@ -286,4 +256,98 @@ footer span {
 
 #trails table .blue {
     background-color: lightblue;
+}
+
+@media screen and (max-width: 480px) {
+    html {max-width: 100vw}
+    /* body {
+        max-width: 400px;
+    } */
+
+    #home header,
+    #home .about,
+    #home .content {
+        flex-direction: column;
+    }
+
+    /* #home header h1 {
+        
+    } */
+
+    #home header img,
+    #home .about video {
+        border: unset;
+        width: auto;
+    }
+    #home header img {
+        margin-left: -4px;
+    }
+
+    #home nav {
+        flex-direction: row;
+        width: auto;
+    }
+
+    #trails {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #trails > header {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #trails > picture.header-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        z-index: -1;
+    }
+    #trails > picture.header-img > img {
+        height: 150px;
+        width: 100%;
+    }
+
+    #trails > nav {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100%;
+    }
+    #trails > nav > a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #trails > audio {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 100%;
+    }
+
+    #trails > .list {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #trails > .more {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        width: 100%;
+    }
+
+    #trails > .pic {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+        width: 100%;
+    }
+
+    #trails > table {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+
+    #trails > footer {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
 }
