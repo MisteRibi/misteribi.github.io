@@ -1,30 +1,20 @@
 /* css for all pages: */
 body {
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
     font-size: 12.5pt;
 }
 
-#home {
-    display: flex;
-    display: row;
-    flex-wrap: wrap;
-}
-#home > * {
-    width: 100%;
-    /* border: 1px dotted #ccc; */
-    /* box-sizing: border-box; */
-    display: flex;
-    /* justify-content: center; */
-  }
 /* Header section/ */
 #home header {
     background-color: rgb(245, 70, 255);
     display: flex;
     justify-content: space-between;
+    /* flex-direction: column; */
+    /* line-height: 1.25rem; */
     padding-left: 0.25rem;
 }
 
@@ -33,7 +23,9 @@ body {
 }
 
 #home header img {
+    /* height: 200px; */
     width: 25%;
+    /* height: 25%; */
     border-left: 10px solid #FFF;
     border-bottom: 3px solid #FFF;
 }
@@ -43,15 +35,23 @@ body {
 #home .about {
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
 }
 
 #home .about div {
+    /* display: flex; */
+    /* width: 100%; */
     flex-direction: column;
     background-color: rgb(224, 203, 183);
     color: #000;
 }
 
+/* #home .about p {
+    width: 20%;
+} */
+
 #home .about video {
+    /* max-width: 20%; */
     width: 25%;
     margin-left: 10px;
     margin-bottom: 3px;
@@ -63,35 +63,43 @@ body {
 /* /About section */
 
 /* Content section/ */
+#home .content {
+    display: flex;
+}
 
-#home > nav {
-    width: 15%;
+nav {
+    width: 100px;
+    display: flex;
     flex-direction: column;
-    justify-content: start;
     font-weight: bolder;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1.5rem; */
 }
 nav a {
     padding: 4px;
 }
 
-#home .content {
-    width: 85%;
-}
-
 #home .options {
+    /* position: relative; */
     width: 100%;
     
 }
+/* #home .options img{
+    width: 99%;
+    padding: 3px;
+} */
 
 #home .list {
+    /* position: absolute; */
     top: 0;
     color: #000;
     width: 100%;
     background-color: rgba(255,255,255,0.75);
     color: #000000;
     font-family: sans-serif;
+    /* width: 100%; */
+    /* height: 100%; */
     padding-left: 0.25rem;
     line-height: 1.5rem;
 }
@@ -99,6 +107,8 @@ nav a {
 
 
 #home footer {
+    /* position: absolute; */
+    /* bottom: -125px; */
     color: #000000;
     width: 100%;
     padding-left: 0.25rem;
@@ -205,9 +215,16 @@ footer span {
 
 #trails .about li {
     list-style-position: inside;
+    /* clear: right; */
     background-color: rgb(208, 229, 255);
     color: #000;
 }
+
+/* #trails .about img {
+    float: right;
+    height: 160px;
+    border: 8px solid #FFF;
+} */
 
 #trails .red {
     color: red;
@@ -263,6 +280,7 @@ footer span {
 
     #home header img,
     #home .about video {
+        /* border: unset; */
         margin: unset;
         border: unset;
         width: auto;
@@ -276,11 +294,6 @@ footer span {
         flex-direction: row;
         width: auto;
     }
-    #home > header {order: 1;}
-    #home > nav {order: 2;}
-    #home > .about {order: 3;}
-    #home > .content {order: 4;}
-    #home > footer {order: 5;}
 
     #trails {
         display: grid;
