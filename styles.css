@@ -15,18 +15,48 @@ html, body {
 	'Helvetica Neue', sans-serif;
 }
 
-body {
+body, nav {
 	margin: 0 auto;
-	width: 80%;
+	width:90%;
 	max-width: 1000px;
+}
+body {
+	padding-top: 65px;
 	background-color: var(--myLightBlue);
 	font-size: 14pt;
 	
 }
+.offcanvas {
+	max-width:90%;
+	margin: auto 5%;
+}
 
-header, nav {
+#navbar.container-fluid {
+	margin-top: -10px;
+	background-color: #FFFFFF;
+	/* border-radius: 0 0 var(--mySpace) var(--mySpace); */
+	box-shadow: 0 var(--mySpace) 8px 0 var(--myGrayBlue), 0 var(--mySpace) 20px 0 var(--myGrayBlue);
+}
+
+.offcanvas-header {
+	background-color: #FFFFFF;
+	padding-top: unset;
+	padding-bottom: unset;
+	padding-left: unset;
+}
+.offcanvas-body {
+	margin: 10px;
+	width: auto;
+}
+a.nav-link:hover,
+a.active {
+	background-color: var(--myBlue) !important;
+	color: white;
+	/* cursor: pointer; */
+}
+
+/* header {
 	text-align: center;
-	/* max-width: 600px; */
     min-width: 360px;
 	margin: auto;
 	margin-bottom: var(--mySpace);
@@ -39,29 +69,32 @@ header > h1 {
 	background-color: var(--myGrayBlue);
 	border-radius: var(--mySpace) var(--mySpace) 0 0;
 	text-align: center;
-}
+} */
 
-nav {
+/* nav.navbar {
 	position: sticky;
-	top: 0px;
-	margin-top: -10px;
+	top: -12.5px;
+	margin-top: -25px;
 	z-index: 1;	
-}
+} */
 
-nav > ul {
+/* nav > div {
+	border-radius: 0 0 var(--mySpace) var(--mySpace);
+	background-color: #FFFFFF;
+	width: 100%;
+	box-shadow: 0 var(--mySpace) 8px 0 var(--myGrayBlue), 0 var(--mySpace) 20px 0 var(--myGrayBlue);
+} */
+
+/* nav > div > ul {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
 	padding-inline-start: 0;
-	margin-block: 0;
-	border-radius: 0 0 var(--mySpace) var(--mySpace);
-	background-color: #FFFFFF;
-	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-	box-shadow: 0 var(--mySpace) 8px 0 var(--myGrayBlue), 0 var(--mySpace) 20px 0 var(--myGrayBlue);
+	margin-block: 0;	
 }
   
-nav > ul > li {
+nav > div > ul > li {
 	color: var(--myBlue);
 	margin: 0.2rem 0.2rem;
 	padding: 0.2rem;
@@ -69,17 +102,17 @@ nav > ul > li {
 	padding: 3px 12px 3px 12px;
 }
 
-nav > ul > li:hover, #navcurrent {
+nav > div > ul > li:hover, #navcurrent {
 	background-color: var(--myBlue);
 	color: white;
 	cursor: pointer;
 	border-radius: var(--mySpace);
-}
+} */
 
-li > a {
+/* li > a {
 	color: inherit;
 	text-decoration: none;
-}
+} */
 
 div {
 	display: inline-block;
@@ -89,6 +122,10 @@ div {
 	overflow: hidden;
 	width: 100%;
 }
+
+/* #navbar {
+	background-color: white;
+} */
 
 #passions div {
 	background-color: #FFE6C1DF;
@@ -220,6 +257,10 @@ footer {
 		min-width: 200px;
 	}
 	
+	#navbar.container-fluid {
+		height: 64px;
+	}
+
 	picture > img {
 		display: block;
 		float: none;
