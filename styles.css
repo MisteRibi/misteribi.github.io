@@ -39,7 +39,7 @@ body {
 	margin-top: -8px;
 	background-color: #FFFFFF;
 	/* border-radius: 0 0 var(--mySpace) var(--mySpace); */
-	box-shadow: 0 var(--mySpace) 8px 0 var(--myGrayBlue), 0 var(--mySpace) 20px 0 var(--myGrayBlue);
+	/* box-shadow: 0 var(--mySpace) 8px 0 var(--myGrayBlue), 0 var(--mySpace) 20px 0 var(--myGrayBlue); */
 }
 
 .offcanvas-header {
@@ -155,11 +155,11 @@ li {
 	margin-right: var(--mySpace);
 }
 
-picture > img {
+/* picture > img {
 	border-radius: calc(var(--mySpace)/2);
 	margin: calc(var(--mySpace)/2);
 	max-width: 280px;
-}
+} */
 
 div:nth-child(even) > picture:not(.full),
 div:nth-child(even) > a > picture:not(.full) {
