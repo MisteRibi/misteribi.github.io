@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-brand {
-	max-width: 70%;
+	max-width: 73%;
 	/* min-width: 35%; */
 	color: white;
 	background-color: var(--myGrayBlue);
