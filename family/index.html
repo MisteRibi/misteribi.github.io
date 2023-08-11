@@ -13,7 +13,7 @@
 	</head>
 	<body class="mt-5 pt-4">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-		<nav class="navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-body">
+		<nav class="navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-light">
 			<div class="container p-0">
 				<span class="navbar-brand m-0 p-2 ms-1 rounded h1 text-truncate">Jeremy Libion's Family</span>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
 					  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
-				<div class="offcanvas-body rounded-3">
+				<div class="offcanvas-body rounded-3 bg-body">
 					<ul class="navbar-nav justify-content-center flex-grow-1">
 						<li class="nav-item"><a class="nav-link rounded-3" href="/">Home</a></li>
 						<li class="nav-item"><a class="nav-link rounded-3" href="/labs/">Labs</a></li>
@@ -37,48 +37,54 @@
 			</div>
 		</nav>
 		<main class="container">
-			<div class="alert alert-secondary">
-				<picture>
-					<source media="(max-width: 480px)" srcset="img/JoAndMe.200px.gif">
-					<img class="rounded-pill float-end" src="img/JoAndMe.200px.png" alt="A photo of Jo and me">
-				</picture>
-				<p><strong>
-					Originally, I came from a family of five, I am the oldest from my siblings and I have two sisters.
-					<br><br>Since many years I'm with my girlfriend.
-					<br><br>We have two wonderful dogs which cause many funny situations.
-				</strong></p>
-			</div>
+			<div class="row">
+				<div class="alert alert-secondary mb-1 col-12">
+					<picture>
+						<source media="(max-width: 480px)" srcset="img/JoAndMe.200px.gif">
+						<img class="img-fluid rounded-pill float-end" src="img/JoAndMe.200px.png" alt="A photo of Jo and me">
+					</picture>
+					<p><strong>
+						Originally, I came from a family of five, I am the oldest from my siblings and I have two sisters.
+						<br><br>Since many years I'm with my girlfriend.
+						<br><br>We have two wonderful dogs which cause many funny situations.
+					</strong></p>
+				</div>
 
-			<div id="miley" class="rounded-3 p-2">
-				<picture class="float-start">
-					<source media="(max-width: 480px)" srcset="img/mileyandme.200px.gif">
-					<img class="rounded-2 me-2" src="img/mileyandme.200px.png" alt="A photo of Miley and me">
-				</picture>
-				<h3>My first dog:</h3>
-				<p>
-					My oldest dog is named Miley, she was born in August 2009 and she is a Shi-Tzu.
-					I could describe this doggo as a calm dog who enjoy walk, treats and naps, because she is always sleeping.
-					<br><br>The color of her fur is a mix of brown, gray and mostly white.
-					<br><br>Interesting fact even if she's old she loves take walks.
-					<br>Once she has been to the park with me and she was so trilled to be outside.
-					<br><br><strong>Fun fact:</strong> When she's not trimmed she looks like a mop.
-				</p>
-			</div>
+				<div class="col-sm-12 col-lg-6 p-1">
+					<div id="miley" class="rounded-3 p-2 bg-body">
+						<picture class="float-start">
+							<source media="(max-width: 480px)" srcset="img/mileyandme.200px.gif">
+							<img class="img-fluid rounded-2 me-2 mb-2" src="img/mileyandme.200px.png" alt="A photo of Miley and me">
+						</picture>
+						<h3>My first dog:</h3>
+						<p>
+							My oldest dog is named Miley, she was born in August 2009 and she is a Shi-Tzu.
+							I could describe this doggo as a calm dog who enjoy walk, treats and naps, because she is always sleeping.
+							<br><br>The color of her fur is a mix of brown, gray and mostly white.
+							<br><br>Interesting fact even if she's old she loves take walks.
+							<br>Once she has been to the park with me and she was so trilled to be outside.
+							<br><br><strong>Fun fact:</strong> When she's not trimmed she looks like a mop.
+						</p>
+					</div>
+				</div>
 
-			<div id="luna" class="rounded-3 p-2">
-				<picture class="float-end">
-					<source media="(max-width: 480px)" srcset="img/luna.200px.gif">
-					<img class="rounded-2 ms-2" src="img/luna.200px.png" alt="A photo of Luna">
-				</picture>
-				<h3>My second dog:</h3>
-				<p>					
-					My younger dog is named Luna, she's a puppy, born on May 2022, and she is a mix-caniche.
-					<br><br>I would describe her as a dog who as too much energy, always want to play and bark after everything: dog, kids, squirrels, birds and even at ants.
-					<br><br>She as mix colors of whites, gray but mostly black.
-					<br><br>Which is funny because her and Miley are completely opposite in color and comportment.
-					<br><br>She always wants attention and hug and that really make her lovely even though she loves to eat our shoes.
-					<br><br><strong>Fun fact:</strong> She even bark against empty 2 liters empty bottles.
-				</p>
+				<div class="col-sm-12 col-lg-6 p-1">
+					<div id="luna" class="rounded-3 p-2 bg-body">
+						<picture class="float-end">
+							<source media="(max-width: 480px)" srcset="img/luna.200px.gif">
+							<img class="img-fluid rounded-2 mb-2" src="img/luna.200px.png" alt="A photo of Luna">
+						</picture>
+						<h3>My second dog:</h3>
+						<p>					
+							My younger dog is named Luna, she's a puppy, born on May 2022, and she is a mix-caniche.
+							<br><br>I would describe her as a dog who as too much energy, always want to play and bark after everything: dog, kids, squirrels, birds and even at ants.
+							<br><br>She as mix colors of whites, gray but mostly black.
+							<br><br>Which is funny because her and Miley are completely opposite in color and comportment.
+							<br><br>She always wants attention and hug and that really make her lovely even though she loves to eat our shoes.
+							<br><br><strong>Fun fact:</strong> She even bark against empty 2 liters empty bottles.
+						</p>
+					</div>
+				</div>
 			</div>
 		</main>
 		<footer class="p-3 mt-2 rounded text-center">

@@ -13,7 +13,7 @@
 	</head>
 	<body class="mt-5 pt-4">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-		<nav class="navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-body">
+		<nav class="navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-light">
 			<div class="container p-0">
 				<span class="navbar-brand m-0 p-2 ms-1  rounded h1 text-truncate">Jeremy Libion's Portfolio</span>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
 					  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
-				<div class="offcanvas-body rounded-3">
+				<div class="offcanvas-body rounded-3 bg-body">
 					<ul class="navbar-nav justify-content-center flex-grow-1">
 						<li class="nav-item"><a class="nav-link rounded-3 active navbar-dark" href="/">Home</a></li>
 						<li class="nav-item"><a class="nav-link rounded-3" href="/labs/">Labs</a></li>
@@ -36,43 +36,50 @@
 				</div>
 			</div>
 		</nav>
+
 		<main class="container">
-			<div class="alert alert-secondary mb-1">
-				<p><strong>
-					Welcome on this portfolio. On this page you may find information about me, my life, my center of interest and my family.
-					<br>This website was created as a project for my program at Vanier College.
-				</strong></p>
-			</div>
-			<div class="rounded-3 p-2">
-				<picture class="float-start pe-2">
-					<source media="(max-width: 480px)" srcset="img/me.200px.gif">
-					<img class="rounded-circle" src="img/me.200px.png" alt="A photo of me">
-				</picture>
-				<p>
-					I’m Jérémy Libion, born in France and came in Canada when I was younger with my parents and siblings.
-					<br><br>I started working at sixteen years old at a groceries store.
-					<br><br>After highschool I did go to school for becoming a cabinetmaker.
-					<br><br>I was good in this job however the time limit was difficult to deal with sometime.
-					<br><br>Later I stopped working as a cabinetmaker and worked at:
-				</p>
-				<ul>
-					<li>A general store filling the shelves and helping the cashiers.</li>
-					<li>A convenience store filling the shelves and as a cashier.</li>
-					<li>A hardware store filling and rebuilding the shelves.</li>
-				</ul>
-				<p>
-					Nowadays I'm back to school studiying <i>Web and Database Programming</i> at <a href="https://www.vaniercollege.qc.ca/" target="_blank"><i>Vanier College</i></a>.
-				</p>
-			</div>
-			<div class="rounded-3 p-2">
-				<h3>In the different pages you will find more information.</h3>
-				<p>
-					In the page <a href="/labs/">Labs</a> you will see all the labs I did for my program at Vanier College.
-					<br><br>And in the page <a href="/designs/">Designs</a> I will talk about page designs that like and some that I dislike with examples.
-					<br><br>In the page <a href="/passions/">Passions</a> you will get information about my passions such as videogame and hiking.
-					<br><br>Then, in the page <a href="/family/">Family</a> you will find information about my family and my pets.
-					<br><br>Finally, in the last page <a href="/about/">About</a> you will have information about this portfolio and the program at Vanier.
-				</p>
+			<div class="row">
+				<div class="alert alert-secondary mb-1 col-12">
+					<p><strong>
+						Welcome on this portfolio. On this page you may find information about me, my life, my center of interest and my family.
+						<br>This website was created as a project for my program at Vanier College.
+					</strong></p>
+				</div>
+				<div class="col-sm-12 col-lg-6 p-1">
+					<div class="rounded-3 p-2 bg-body">
+						<picture class="float-start pe-2">
+							<source media="(max-width: 480px)" srcset="img/me.200px.gif">
+							<img class="rounded-circle" src="img/me.200px.png" alt="A photo of me">
+						</picture>
+						<p>
+							I’m Jérémy Libion, born in France and came in Canada when I was younger with my parents and siblings.
+							<br><br>I started working at sixteen years old at a groceries store.
+							<br><br>After highschool I did go to school for becoming a cabinetmaker.
+							<br><br>I was good in this job however the time limit was difficult to deal with sometime.
+							<br><br>Later I stopped working as a cabinetmaker and worked at:
+						</p>
+						<ul>
+							<li>A general store filling the shelves and helping the cashiers.</li>
+							<li>A convenience store filling the shelves and as a cashier.</li>
+							<li>A hardware store filling and rebuilding the shelves.</li>
+						</ul>
+						<p>
+							Nowadays I'm back to school studiying <i>Web and Database Programming</i> at <a href="https://www.vaniercollege.qc.ca/" target="_blank"><i>Vanier College</i></a>.
+						</p>
+					</div>
+				</div>	
+				<div class="col-sm-12 col-lg-6 p-1">
+					<div class="col-12 rounded-3 p-2 bg-body">
+						<h3>In the different pages you will find more information.</h3>
+						<p>
+							In the page <a href="/labs/">Labs</a> you will see all the labs I did for my program at Vanier College.
+							<br><br>And in the page <a href="/designs/">Designs</a> I will talk about page designs that like and some that I dislike with examples.
+							<br><br>In the page <a href="/passions/">Passions</a> you will get information about my passions such as videogame and hiking.
+							<br><br>Then, in the page <a href="/family/">Family</a> you will find information about my family and my pets.
+							<br><br>Finally, in the last page <a href="/about/">About</a> you will have information about this portfolio and the program at Vanier.
+						</p>
+					</div>
+				</div>
 			</div>
 		</main>
 		

@@ -73,13 +73,16 @@ a.active {
 	padding: 11px 19px !important;
 }
 
-div {
+/* div {
 	display: inline-block;
-	/* border-radius: var(--mySpace); */
 	margin: calc(var(--mySpace)/2) 0;
 	background-color: var(--myCompLightBlue);
 	overflow: hidden;
 	width: 100%;
+} */
+
+.bg-body {
+	background-color: var(--myCompLightBlue) !important;
 }
 
 /* h3, p {
@@ -113,6 +116,11 @@ a > picture > img:hover {
 	font-weight: bolder;
 	margin-top: 15px;
 } */
+
+/* labs section  */
+.bg-body:not(.last) {
+	height: 100%;
+}
 
 /* color scheme section  */
 #colors-schemes span {
@@ -200,6 +208,10 @@ footer {
 @media (max-width: 480px) {
 	picture {
 		width: 100%;
+	}
+
+	li:not(:last-child) {
+		margin-right: 0;
 	}
 
 	/* picture > img.full {

@@ -12,7 +12,7 @@
 	</head>
 	<body class="mt-5 pt-4">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-		<nav class="navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-body">
+		<nav class="navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-light">
 			<div class="container p-0">
 				<span class="navbar-brand m-0 p-2 ms-1 rounded h1 text-truncate">About this portfolio</span>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
 					  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
 					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
-				<div class="offcanvas-body rounded-3">
+				<div class="offcanvas-body rounded-3 bg-body">
 					<ul class="navbar-nav justify-content-center flex-grow-1">
 						<li class="nav-item"><a class="nav-link rounded-3" href="/">Home</a></li>
 						<li class="nav-item"><a class="nav-link rounded-3" href="/labs/">Labs</a></li>
@@ -36,56 +36,64 @@
 			</div>
 		</nav>
 		<main class="container">
-			<div class="alert alert-secondary">
-				<p><strong>
-					The portfolio was created as part of the <a href="https://www.vaniercollege.qc.ca/" target="_blank"><i>Vanier College</i></a> program <i>Web and Database Programming</i> I attented.
-					<br><br>In the portfolio I talk about my parcours, my passions and my family.
-					<br>I wanted to do a portfolio that everyone can view it even in smartphone and big screen.
-					<br><br>
-					There is the wireframe I did for creating the portfolio.
-				</strong></p>
-			</div>
+			<div class="row">
+				<div class="alert alert-secondary mb-1 col-12">
+					<p><strong>
+						The portfolio was created as part of the <a href="https://www.vaniercollege.qc.ca/" target="_blank"><i>Vanier College</i></a> program <i>Web and Database Programming</i> I attented.
+						<br><br>In the portfolio I talk about my parcours, my passions and my family.
+						<br>I wanted to do a portfolio that everyone can view it even in smartphone and big screen.
+						<br><br>
+						There is the wireframe I did for creating the portfolio.
+					</strong></p>
+				</div>
 
-			<div class="rounded-3 p-2">
-				<h3>Why did I chose this program at Vanier?</h3>
-				<p>
-					Since I was fourteen years old I was passionate with computer, technologies, gaming and programming.
-					<br><br>After highschool I finaly chose another path: cabinetmaker.
-					<br><br>I was loving it but not enough so I finaly stopped it, one of the reason was an accident.
-					<br><br>Since then I was wondering if I should go back to school and then a friend of my beautiful girlfriend
-					was in the program at Vanier in the evening and recommended it to me.
-					<br><br>The evening program was perfect for me since I work all days week.
-					</p>
-			</div>
+				<div class="col-sm-12 col-lg-6 p-1">
+					<div class="rounded-3 p-2 bg-body">
+						<h3>Why did I chose this program at Vanier?</h3>
+						<p>
+							Since I was fourteen years old I was passionate with computer, technologies, gaming and programming.
+							<br><br>After highschool I finaly chose another path: cabinetmaker.
+							<br><br>I was loving it but not enough so I finaly stopped it, one of the reason was an accident.
+							<br><br>Since then I was wondering if I should go back to school and then a friend of my beautiful girlfriend
+							was in the program at Vanier in the evening and recommended it to me.
+							<br><br>The evening program was perfect for me since I work all days week.
+							</p>
+					</div>
+				</div>
 
-			<div class="rounded-3 p-2">
-				<picture class="float-end">
-					<source media="(max-width: 480px)" srcset="img/Portfolio_Wireframe_Vertical.480px.gif">
-					<img class="rounded-2 ms-2 mb-2" src="img/Portfolio_Wireframe_Vertical.480px.gif" alt="Vertical Wireframe"  class="rounded-2">
-				</picture>
-				<h3>Wireframe</h3>
-				<p>
-					Before building the website, I did some wireframes for it.
-					<br><br>I opted for something simple with softly rounded boxes.
-					<br><br>I also wanted multiple view to work with either smaller screen like phone and bigger one like 4k screen.
-				</p>
-				<a href="img/Portfolio_Wireframe.gif"><picture>
-					<source media="(max-width: 480px)" srcset="img/Portfolio_Wireframe.480px.gif">
-					<img class="img-fluid mt-2 mb-2 rounded-2" src="img/Portfolio_Wireframe.gif" alt="Vertical Wireframe" >
-				</picture></a>
-				<p>
-					For the the FHD to 4k screen I added <a href="img/Portfolio_Wireframe_FHD_4k.gif">background pictures</a> on the sides for the <a href="/passions/">passions</a> page.
-				</p>
-			</div>
-
-			<div id="colors-schemes" class="rounded-3 p-2">
-				<h3>Colors Schemes</h3>
-				<p>
-					Since the blue color is beautiful, I opted for <span id="hawkes-blue">Hawkes Blue</span> with is complementary color <span id="bisque">Bisque</span>.
-					<br><br>For the page title's background I opted for <span id="bright-grey">Bright Grey</span>.
-					<br><br>And for the navigation bar's accent color I opted for <span id="navy-blue">Navy Blue</span>.
-					<br><br>I do think that all of them together is a good choice of color.
-				</p>
+				<div class="col-sm-12 col-lg-6 p-1">
+					<div class="rounded-3 p-2 bg-body">
+						<picture class="float-end">
+							<source media="(max-width: 480px)" srcset="img/Portfolio_Wireframe_Vertical.480px.gif">
+							<img class="img-fluid rounded-2 me-2 mb-2" src="img/Portfolio_Wireframe_Vertical.480px.gif" alt="Vertical Wireframe"  class="rounded-2">
+						</picture>
+						<h3>Wireframe</h3>
+						<p>
+							Before building the website, I did some wireframes for it.
+							<br><br>I opted for something simple with softly rounded boxes.
+							<br><br>I also wanted multiple view to work with either smaller screen like phone and bigger one like 4k screen.
+						</p>
+						<a href="img/Portfolio_Wireframe.gif"><picture>
+							<source media="(max-width: 480px)" srcset="img/Portfolio_Wireframe.480px.gif">
+							<img class="img-fluid mt-2 mb-2 rounded-2" src="img/Portfolio_Wireframe.gif" alt="Vertical Wireframe" >
+						</picture></a>
+						<p>
+							For the the FHD to 4k screen I added <a href="img/Portfolio_Wireframe_FHD_4k.gif">background pictures</a> on the sides for the <a href="/passions/">passions</a> page.
+						</p>
+					</div>
+				</div>
+				
+				<div class="col-sm-12 p-1">
+					<div id="colors-schemes" class="rounded-3 p-2 bg-body">
+						<h3>Colors Schemes</h3>
+						<p>
+							Since the blue color is beautiful, I opted for <span id="hawkes-blue">Hawkes Blue</span> with is complementary color <span id="bisque">Bisque</span>.
+							<br><br>For the page title's background I opted for <span id="bright-grey">Bright Grey</span>.
+							<br><br>And for the navigation bar's accent color I opted for <span id="navy-blue">Navy Blue</span>.
+							<br><br>I do think that all of them together is a good choice of color.
+						</p>
+					</div>
+				</div>
 			</div>
 		</main>
 		<footer class="p-3 mt-2 rounded text-center">
