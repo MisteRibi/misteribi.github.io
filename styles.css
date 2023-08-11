@@ -29,7 +29,7 @@ body {
 .offcanvas {
 	/* max-width:90%; */
 	max-width: fit-content;
-    height: fit-content;
+    /* height: unset; */
 	margin: auto 5%;
 }
 
