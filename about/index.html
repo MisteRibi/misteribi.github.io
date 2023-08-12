@@ -4,33 +4,34 @@
 		<title>About this portfolio</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="About Jeremy Libion's Portfolio.">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 		<link rel="stylesheet" href="../styles.css">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon.16x.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.32x.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/favicon.180x.png">
 	</head>
-	<body class="mt-5 pt-4">
+	<body class="mt-5 pt-4 bg-body-secondary">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-		<nav class="navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-light">
-			<div class="container p-0">
-				<span class="navbar-brand m-0 p-2 ms-1 rounded h1 text-truncate">About this portfolio</span>
+		<nav class="container navbar nav-pills nav-justified navbar-expand-lg fixed-top p-1 rounded shadow pb-1 bg-light">
+			<div class="container">
+				<span class="navbar-brand p-2 m-1 rounded h1 text-truncate text-light bg-body-tertiary"><a id="top" class="nav-link" href="#">About this portfolio</a></span>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="offcanvas offcanvas-end m-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="false">
-					<div class="offcanvas-header">
+				<div class="offcanvas offcanvas-end m-0 rounded-3" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true">
+					<div class="offcanvas-header p-2">
 					  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					  <button type="button" class="btn-close ps-5" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
-				<div class="offcanvas-body rounded-3 bg-body">
+				<div class="offcanvas-body rounded-3 bg-body m-2 p-1">
 					<ul class="navbar-nav justify-content-center flex-grow-1">
-						<li class="nav-item"><a class="nav-link rounded-3" href="/">Home</a></li>
-						<li class="nav-item"><a class="nav-link rounded-3" href="/labs/">Labs</a></li>
-						<li class="nav-item"><a class="nav-link rounded-3" href="/designs/">Designs</a></li>
-						<li class="nav-item"><a class="nav-link rounded-3" href="/passions/">Passions</a></li>
-						<li class="nav-item"><a class="nav-link rounded-3" href="/family/">Family</a></li>
-						<li class="nav-item"><a class="nav-link rounded-3 active navbar-dark" href="/about/">About</a></li>
+						<li class="nav-item ms-1 me-1"><a class="nav-link pt-1 pb-1 rounded-3" href="/">Home</a></li>
+						<li class="nav-item ms-1 me-1"><a class="nav-link pt-1 pb-1 rounded-3" href="/labs/">Labs</a></li>
+						<li class="nav-item ms-1 me-1"><a class="nav-link pt-1 pb-1 rounded-3" href="/designs/">Designs</a></li>
+						<li class="nav-item ms-1 me-1"><a class="nav-link pt-1 pb-1 rounded-3" href="/passions/">Passions</a></li>
+						<li class="nav-item ms-1 me-1"><a class="nav-link pt-1 pb-1 rounded-3" href="/family/">Family</a></li>
+						<li class="nav-item ms-1 me-1"><a class="nav-link pt-1 pb-1 rounded-3 active text-light bg-primary" href="#">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -38,16 +39,16 @@
 		<main class="container">
 			<div class="row">
 				<div class="alert alert-secondary mb-1 col-12">
-					<p><strong>
+					<p class="fw-bold">
 						The portfolio was created as part of the <a href="https://www.vaniercollege.qc.ca/" target="_blank"><i>Vanier College</i></a> program <i>Web and Database Programming</i> I attented.
 						<br><br>In the portfolio I talk about my parcours, my passions and my family.
 						<br>I wanted to do a portfolio that everyone can view it even in smartphone and big screen.
 						<br><br>
 						There is the wireframe I did for creating the portfolio.
-					</strong></p>
+					</p>
 				</div>
 
-				<div class="col-sm-12 col-lg-6 p-1">
+				<div class="col-sm-12 col-lg-3 p-1">
 					<div class="rounded-3 p-2 bg-body">
 						<h3>Why did I chose this program at Vanier?</h3>
 						<p>
@@ -83,21 +84,28 @@
 					</div>
 				</div>
 				
-				<div class="col-sm-12 p-1">
+				<div class="col-sm-12 col-lg-3 p-1">
 					<div id="colors-schemes" class="rounded-3 p-2 bg-body">
 						<h3>Colors Schemes</h3>
 						<p>
-							Since the blue color is beautiful, I opted for <span id="hawkes-blue">Hawkes Blue</span> with is complementary color <span id="bisque">Bisque</span>.
-							<br><br>For the page title's background I opted for <span id="bright-grey">Bright Grey</span>.
-							<br><br>And for the navigation bar's accent color I opted for <span id="navy-blue">Navy Blue</span>.
+							Since the blue color is beautiful, I opted for <span class="bg-body-secondary rounded ps-1 pe-1">Hawkes Blue</span> with is complementary color <span class="bg-body border border-black rounded ps-1 pe-1">Bisque</span>.
+							<br><br>For the page title's background I opted for <span class="text-light bg-body-tertiary rounded ps-1 pe-1">Bright Grey</span>.
+							<br><br>And for the navigation bar's accent color I opted for <span class="text-light bg-primary rounded ps-1 pe-1">Navy Blue</span>.
 							<br><br>I do think that all of them together is a good choice of color.
 						</p>
 					</div>
 				</div>
 			</div>
 		</main>
-		<footer class="p-3 mt-2 rounded text-center">
-			Created by Jérémy Libion
+		
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+			<symbol id="bootstrap" viewBox="0 0 118 94">
+			  <title>Bootstrap</title>
+			  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+			</symbol>
+		</svg>
+		<footer class="container p-3 mt-2 rounded text-center text-primary bg-light fw-bold">
+			Created by Jérémy Libion with <a class="text-decoration-none" href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><svg class="" width="30" height="24"><use xlink:href="#bootstrap"></use></svg><span class="bs-color"> Bootstrap</span></a>.
 		</footer>
 	</body>
 </html>
