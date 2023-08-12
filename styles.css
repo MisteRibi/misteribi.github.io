@@ -99,16 +99,4 @@ footer {
 	picture > img {
 		width: 100vw;
 	}
-/* 
-	li:not(:last-child) {
-		margin-right: 0;
-	} */
-
-	/* picture > img.full {
-		display: block;
-		float: none;
-		max-width: 93%;
-		margin-left: var(--mySpace);
-		margin-right: var(--mySpace);
-	} */
 }

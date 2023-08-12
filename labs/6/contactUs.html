@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" id="contact-html">
+    <head>
+        <title>Shepard Luxury Resort</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="myCSS.css">
+    </head>
+    <body id="contact">
+        <header>
+            <h1>Shepard Luxury Resort</h1>
+        </header>
+        <picture class="header-img">
+            <img src="../src/image1.jpg" alt="Someone on top of a mountain with a beautiful view.">
+        </picture>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="trails.html">Trails</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <main>
+            <h1>Contact Us</h1>
+            <form id="form" action="">
+                <label for="name">Name:</label>
+                <input id="name" type="text">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option value="montreal">Montreal</option>
+                    <option value="ottawa">Ottawa</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="halifax">Halifax</option>
+                </select>
+                <br>
+                <label for="reservation">Reservation:</label>
+                <input type="date" name="reservation" id="reservation"><span style="text-align: center;">-</span><input type="date" name="reservation-end" id="reservation-end">
+                <br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                
+                <button id="send" type="submit" onclick="alert('Not implemented yet.')">Send</button>
+            </form>
+        </main>
+        <footer>
+            <p>
+                <em>
+                    Copyright &copy; 2018 Pacific Trails Resort<br>
+                    <a href="mailto:yourfirstname@yourname.com">yourfirstname@yourlastname.com</a></em>
+            </p>
+            <br>
+        </footer>
+    </body>
+</html>
