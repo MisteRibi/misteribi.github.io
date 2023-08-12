@@ -22,11 +22,12 @@ body {
 /* better looking offcanvas */
 .offcanvas {
 	max-width: fit-content;
-    height: 288px;
+    height: 294px;
 }
 
 div {
 	scroll-margin-top: 64px;
+	/* scroll-margin-top: 3rem; */
 }
 
 
@@ -52,6 +53,10 @@ a.nav-link:hover:not(#top) {
 .bg-primary {background-color: var(--myBlue) !important;}
 
 .text-primary {color: var(--myBlue) !important;}
+
+picture:not(.float-start,.float-end) > img {
+	width: 100vw;
+}
 
 /* Boorstrap's color */
 .bs-color {color: #7d2fff;}
